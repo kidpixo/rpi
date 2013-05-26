@@ -2,6 +2,15 @@
 #This will get you some system info 
 #Built using Raspbian Wheezy
 #sleep for dramatic effect
+
+read -p "Would you like to get System Stats? (Press Y or N) " -n 1
+if [[ ! $REPLY =~ ^[Yy]$ ]]
+then
+    exit 1
+fi
+
+
+echo
 echo "Current System Status"
 sleep 1
 echo "Cpu Temp:"
