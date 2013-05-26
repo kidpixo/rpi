@@ -6,3 +6,4 @@
 |_|   |_\_____(___/|  __/|____/|_____)_|  |_|    \__  |_|    |_|
                    |_|                          (____/          
 
+Some hacks, scripts, and tricks for the RPI. 
