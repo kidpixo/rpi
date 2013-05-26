@@ -9,12 +9,13 @@ then
     exit 1
 fi
 
+vcgencmd=/opt/vc/bin/vcgencmd 
 
 echo
 echo "Current System Status"
 sleep 1
 echo "Cpu Temp:"
-/opt/vc/bin/vcgencmd measure_temp
+$vcgencmd measure_temp
 sleep 1
 echo "System Uptime:"
 sleep 1
@@ -22,21 +23,21 @@ uptime
 sleep 1
 echo "Firmware Version:"
 sleep 1
-/opt/vc/bin/vcgencmd version
+$vcgencmd version
 sleep 1
 echo "Show Voltages:"
 sleep 1
 echo "Core Volts:"
-/opt/vc/bin/vcgencmd measure_volts core
+$vcgencmd measure_volts core
 sleep 1
 echo "Sdram_c"
-/opt/vc/bin/vcgencmd measure_volts sdram_c
+$vcgencmd measure_volts sdram_c
 sleep 1
 echo "Sdram_i"
-/opt/vc/bin/vcgencmd measure_volts sdram_i
+$vcgencmd measure_volts sdram_i
 sleep 1
 echo "Sdram_p"
-/opt/vc/bin/vcgencmd measure_volts sdram_p
+$vcgencmd measure_volts sdram_p
 sleep 1
 echo "CPU Info:"
 sleep 1
