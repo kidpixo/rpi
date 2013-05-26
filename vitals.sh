@@ -10,6 +10,7 @@ then
 fi
 
 vcgencmd=/opt/vc/bin/vcgencmd 
+volts=measure_volts
 
 echo
 echo "Current System Status"
@@ -28,16 +29,16 @@ sleep 1
 echo "Show Voltages:"
 sleep 1
 echo "Core Volts:"
-$vcgencmd measure_volts core
+$vcgencmd $volts core
 sleep 1
 echo "Sdram_c"
-$vcgencmd measure_volts sdram_c
+$vcgencmd $volts sdram_c
 sleep 1
 echo "Sdram_i"
-$vcgencmd measure_volts sdram_i
+$vcgencmd $volts sdram_i
 sleep 1
 echo "Sdram_p"
-$vcgencmd measure_volts sdram_p
+$vcgencmd $volts sdram_p
 sleep 1
 echo "CPU Info:"
 sleep 1
