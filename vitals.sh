@@ -15,6 +15,10 @@ volts=measure_volts
 echo
 echo "Current System Status"
 sleep 1
+echo "Who is logged in?"
+sleep 1
+w
+sleep 1
 echo "Cpu Temp:"
 $vcgencmd measure_temp
 sleep 1
