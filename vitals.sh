@@ -20,6 +20,7 @@ sleep 1
 w
 sleep 1
 echo "Cpu Temp:"
+sleep 1
 $vcgencmd measure_temp
 sleep 1
 echo "System Uptime:"
