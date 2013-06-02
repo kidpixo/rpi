@@ -12,7 +12,7 @@ fi
 echo
    echo
    echo "_________________________________"
-   echo "| Welcome To Vitals!            |"
+   echo "|    Welcome To Vitals!         |"
    echo "| Here is some basic system     |"
    echo "| stats. This was built on      |"
    echo "| Raspbian for the raspberry pi |"
