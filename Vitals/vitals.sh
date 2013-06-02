@@ -4,10 +4,21 @@
 #sleep for dramatic effect
 #
 read -p "Would you like to get System Stats? (Press Y or N) " -n 1
+echo
 if [[ ! $REPLY =~ ^[Yy]$ ]]
 then
     exit 1
 fi
+echo
+   echo
+   echo "_________________________________"
+   echo "| Welcome To Vitals!            |"
+   echo "| Here is some basic system     |"
+   echo "| stats. This was built on      |"
+   echo "| Raspbian for the raspberry pi |"
+   echo "_________________________________"
+
+
 
 vcgencmd=/opt/vc/bin/vcgencmd 
 volts=measure_volts
