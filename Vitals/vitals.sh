@@ -1,8 +1,17 @@
 #!/bin/bash
-#This will get you some system info on your Raspberry Pi
-#Built using Raspbian Wheezy
+############################################################
+#
+# This will get you some system info on your Raspberry Pi
+# Built using Raspbian Wheezy
 # originally from http://thekillingtime.com/?p=22
 # forked by github.com/kidpixo from github.com/daguy666/rpi
+#
+############################################################
+#
+# Last source could be retrieved with :
+# curl https://raw.github.com/kidpixo/rpi/master/Vitals/vitals.sh
+#
+############################################################
 
 read -p "Would you like to get System Stats? (Press Y or N) " -n 1
 echo
